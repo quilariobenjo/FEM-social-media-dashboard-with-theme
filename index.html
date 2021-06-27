@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app/scss/style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="content-wrapper">
+  <section class="heading">
+    <div class="heading__text">
+      <h1 class="title--text">Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
+    <hr>
+    <div class="heading__toggle">
+      <div class="toggle--text">
+        <p>Dark Mode</p>
+      </div>
+      
+      <label class="switch">
+        <input type="checkbox" id="button">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </section>
+
+  <section class="social-media">
+    <div class="social-big facebook">
+      <div class="icon-text">
+        <img src="./images/icon-facebook.svg" alt="facebook">
+        <p>@benjoquilario</p>
+      </div>
+      <div class="follow">
+        <h2 class="total-followers">
+          1987
+        </h2>
+        <p class="followers">
+          FOLLOWERS
+        </p>
+      </div>
+      <p class="today-followers"> 12 Today</p>
+    </div>
+    <div class="social-big twitter">
+      <div class="icon-text">
+        <img src="./images/icon-twitter.svg" alt="twitter">
+        <p>@benjoquilario</p>
+      </div>
+      <div class="follow">
+        <h2 class="total-followers">
+          1044
+        </h2>
+        <p class="followers">
+          FOLLOWERS
+        </p>
+      </div>
+      <p class="today-followers"> 99 Today</p>
+    </div>
+    <div class="social-big instagram">
+      <div class="icon-text">
+        <img src="./images/icon-instagram.svg" alt="instagram">
+        <p>@benjoquilario</p>
+      </div>
+      <div class="follow">
+        <h2 class="total-followers">
+          11k
+        </h2>
+        <p class="followers">
+          FOLLOWERS
+        </p>
+      </div>
+      <p class="today-followers"> 1099 Today</p>
+    </div>
+    <div class="social-big youtube">
+      <div class="icon-text">
+        <img src="./images/icon-youtube.svg" alt="youtube">
+        <p>@benjoquilario</p>
+      </div>
+      <div class="follow">
+        <h2 class="total-followers">
+         8239
+        </h2>
+        <p class="followers">
+          SUBSCRIBERS
+        </p>
+      </div>
+      <p class="today-followers"> 144 Today</p>
+    </div>
+  </section>
+</div>
+<div class="content-wrapper">
+  <section class="overview">
+    <h2>Overview - Today</h2>
+    <div class="overview--1">
+      <div class="overview-box page-view" id="light">
+        <div class="page-view__1">
+          <p>Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">87</h3>
+          <small class="overview-percent"> 3%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Likes</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">52</h3>
+          <small class="overview-percent--down"> 2%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Likes</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">5462</h3>
+          <small class="overview-percent"> 2257%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">52k</h3>
+          <small class="overview-percent"> 1375%</small>
+        </div>
+      </div>
+    </div>
+    <div class="overview--2">
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">117</h3>
+          <small class="overview-percent"> 303%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Likes</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">507</h3>
+          <small class="overview-percent--down"> 553%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Likes</p>
+          <img src="../images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">107</h3>
+          <small class="overview-percent--down"> 19%</small>
+        </div>
+      </div>
+      <div class="overview-box page-view">
+        <div class="page-view__1">
+          <p>Total Views</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div class="page-view__2">
+          <h3 class="overview-number">1407</h3>
+          <small class="overview-percent--down"> 12%</small>
+        </div>
+  </section>
+</div>
+
+
+
+  <!-- Social Media Dashboard
+  Total Followers: 23,004
+
+  Dark Mode
+
+  
+
+  @nathanf
+  1987
+  Followers
+  12 Today
+
+  @nathanf
+  1044
+  Followers
+  99 Today
+
+  @realnathanf
+  11k
+  Followers
+  1099 Today
+
+  Nathan F.
+  8239
+  Subscribers
+  144 Today
+
+
+
+  Overview - Today
+
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12%
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+<script src="./app/js/script.js"></script>
+</body>
+</html>
