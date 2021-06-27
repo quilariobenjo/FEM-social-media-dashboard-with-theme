@@ -1,5 +1,5 @@
 const button = document.querySelector('#button');
-const title = document.querySelector('.title--text');
+const title = document.querySelectorAll('.title--text');
 const bigBox = document.querySelectorAll('.social-big');
 const smallBox = document.querySelectorAll('.overview-box')
 const totalFollowers = document.querySelectorAll('.total-followers');
