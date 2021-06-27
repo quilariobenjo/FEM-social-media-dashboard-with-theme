@@ -10,7 +10,10 @@ button.addEventListener('change', e => {
     if(button.checked) {
         heading.style.backgroundColor = 'hsl(225, 100%, 98%)';
         body.style.backgroundColor = 'hsl(0, 0%, 100%)';
-        title.style.color = 'hsl(230, 17%, 14%)';
+        
+        title.forEach(e => {
+            e.style.color = 'hsl(230, 17%, 14%)';
+        }
         bigBox.forEach(e => {
             e.style.backgroundColor = 'hsl(227, 47%, 96%)';
         })
@@ -28,7 +31,9 @@ button.addEventListener('change', e => {
     } else {
         heading.style.backgroundColor = 'hsl(232, 19%, 15%)';
         body.style.backgroundColor = 'hsl(230, 17%, 14%)';
-        title.style.color = 'hsl(0, 0%, 100%)';
+        title.forEach(e => {
+            e.style.color = 'hsl(0, 0%, 100%)';                 
+        })
         bigBox.forEach(e => {
             e.style.backgroundColor = 'hsl(228, 28%, 20%)';
         })
